@@ -18,7 +18,21 @@ PS: The location pins are not perfect(may appear to be on buildings etc). This i
 Ideally, you want to be able to read location at every point as the user/driver in this case uses the root. 
 
 
-Future Updates
+### Future Updates
 
 - Using Firebase to read location
 - User to select location and destination
+
+
+### Setup
+
+In your manifest file
+```kotlin
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY_HERE"
+            />
+            
+````
+
+The api-key used above is de-activated. Create one from the google cloud console
