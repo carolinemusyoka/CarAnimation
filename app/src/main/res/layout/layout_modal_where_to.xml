@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/where_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Where to?"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/curr_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/text_input_layout"
+        android:clickable="true"
+        android:padding="5dp"
+        android:layout_marginTop="25dp"
+        android:focusable="auto"
+        android:longClickable="false"
+        app:endIconDrawable="@drawable/ic_pin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/where_to"
+        app:layout_constraintTop_toTopOf="@id/where_to">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/currentLocation"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="false"
+            android:inputType="textMultiLine"
+            android:longClickable="false"
+            android:singleLine="false"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="70dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        app:contentPadding="5dp"
+        android:id="@+id/car_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_location"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="Micro"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/gt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="11 mins"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:contentPadding="5dp"
+        android:id="@+id/car_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/car_3"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toEndOf="@+id/car_1"
+        app:layout_constraintTop_toBottomOf="@+id/curr_location"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="Mini"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/sec_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/maserati" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="20 mins"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        app:contentPadding="5dp"
+        android:id="@+id/car_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:outlineAmbientShadowColor="@color/black"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curr_location"
+        app:strokeColor="@color/black"
+        app:strokeWidth="0.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:text="Micro"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/third_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bmw" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:text="30 mins"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ride_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:text="Ride Later"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ride_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Ride Now"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/car_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

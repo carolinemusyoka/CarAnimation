@@ -1,16 +1,91 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.CarAnimation" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.CarAnimation" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
         <item name="colorOnSecondary">@color/black</item>
+
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@android:color/black</item>
+
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/white</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:windowBackground">@color/white</item>
         <!-- Customize your theme here. -->
+    </style>
+    <style name="title_1" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="title_2" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="title_3" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="description" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="autoSizeMaxTextSize">14sp</item>
+        <item name="autoSizeMinTextSize">10sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeStepGranularity">1sp</item>
+    </style>
+    <style name="label" parent="Widget.AppCompat.TextView">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="textbutton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAppearance">@style/label</item>
+        <item name="iconPadding">20dp</item>
+        <item name="iconGravity">textEnd</item>
+    </style>
+    <style name="text_input_layout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxStrokeColor">@color/dark_gray</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/black</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="prefixTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="prefixTextColor">@android:color/black</item>
+    </style>
+
+    <style name="bottomSheetBackground" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_top_corners</item>
+    </style>
+
+    <style name="button" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:backgroundTint">@color/black</item>
+    </style>
+    <style name="edit_text" parent="Widget.AppCompat.EditText">
+        <item name="hintTextColor">@color/dark_gray</item>
+        <item name="android:textColor">@android:color/black</item>
     </style>
 </resources>

@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CarAnimation">
         <activity
+            android:name=".SelectDestination"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,8 +30,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAQwrNu61m0kDHeddkayVh3XkdtkVXHCV4"
-            />
+            android:value="AIzaSyAQwrNu61m0kDHeddkayVh3XkdtkVXHCV4" />
     </application>
 
 </manifest>
