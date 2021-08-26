@@ -3,7 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/drawable/ic_pin.xml" value="0.1" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/drawable/ic_search.xml" value="0.22552083333333334" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/drawable/round_btn.xml" value="0.22552083333333334" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/drawable/rounded_top_corners.xml" value="0.22552083333333334" />
         <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/layout/activity_main.xml" value="0.13677536231884058" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/layout/activity_select_destination.xml" value="0.209375" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/layout/activity_select_location.xml" value="0.209375" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/layout/layout_modal_where_to.xml" value="0.11284046692607004" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/layout/layout_rate_your_ride.xml" value="0.209375" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/xml/activity_select_location_scene.xml" value="0.1" />
+        <entry key="..\:/Carol/projects/CarAnimation/app/src/main/res/xml/activity_select_location_xml_location_root_scene.xml" value="0.1" />
       </map>
     </option>
   </component>
