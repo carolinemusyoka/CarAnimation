@@ -24,6 +24,16 @@ Ideally, you want to be able to read location at every point as the user/driver 
 - User to select location and destination
 
 
+### Progress
+
+##### 1. Adding a bottom sheet dialog to select location and ride
+
+<p align="center">
+<img src="assets/dark.jpg" width="30%"/>
+<img src="assets/light.jpg" width="30%"/> 
+</p>
+
+
 ### Setup
 
 In your manifest file
